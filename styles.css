@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu {
+    width: 200px;
+}
+
+.btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    border-top: 2px solid #3498db;
+}
+
+.smenu {
+    background-color: #333;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.smenu a{
+    display: block;
+    font-size: 14px;
+    padding: 10px 40px;
+}
+
+:target .smenu {
+    max-height: 10rem;
+}
